@@ -27,9 +27,13 @@ function Update(){
 }
 
 function OnGUI (){
-GUI.skin = theSkin;
+   GUI.skin = theSkin;
+   var style : GUIStyle = new GUIStyle();
+   style.fontSize = 16;
+   style.normal.textColor= new Color(255f,255f,255f,1f);
    GUI.Label (new Rect(Screen.width/2-150-18,20,100,100), ""+playerScore1);
    GUI.Label (new Rect(Screen.width/2+150-18,20,100,100), ""+playerScore2);
+   GUI.Label (new Rect(0,0,100,200), "Made By Abdelrahman Bonna",style);
 
    if(GUI.Button(new Rect(Screen.width/2-121/2,35,121,53),"RESET")){
      playerScore1 =0;

@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-var ballSpeed : float = 100;
+var ballSpeed : float = 80;
 
 
 
@@ -11,14 +11,7 @@ function Start () {
 }
 
 function Update(){
-  var xVel : float = GetComponent.<Rigidbody2D>().velocity.x;
-  if(xVel> 18 && xVel>-18 && xVel != 0){
-  if(xVel>0){
-    GetComponent.<Rigidbody2D>().velocity.x=20;
-    }else{
-    GetComponent.<Rigidbody2D>().velocity.x=-20;
-    }
-  }
+
 }
 
 
